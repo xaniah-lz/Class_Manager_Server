@@ -9,7 +9,7 @@ let user=[
     {id:2,firstName:`Lore`,lastName:`Zorri`,section:`BSIT 4B`,status:`absent`},
 ];
 
-app.get(`/users`,(req,res)=> {
+app.post(`/users`,(req,res)=> {
     const {firstName, lastName , section,status} = req.body;
     const userIndex = user.findIndex(user=> user.firstName === firstName && user.lastName === lastName);
 
@@ -57,4 +57,5 @@ app.get(`/`, (req,res) => {
 module.exports = app;
 app.listen(PORT, ()=> {
     console.log(`Server listening at http://localhost:${port}`);
+
 });
