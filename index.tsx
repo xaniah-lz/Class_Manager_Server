@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
-const SERVER_URL = "https://zorrilla-class-manager-server.vercel.app/users"
+const SERVER_URL = "https://bsit-4b-classmanagement-server.vercel.app/users"
 
 
 
@@ -177,3 +177,4 @@ const styles = StyleSheet.create({
     gap: 150,
   },
 });
+
